@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:padding="@dimen/controll_act_main_margin" >
+
+    <TextView
+        android:id="@+id/ControlActLightOnOffText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/controll_act_item_margin"
+        android:text="@string/light"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/controll_act_title_fonsize"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controll_act_line_thickness"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActBrightnessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/Brightness_on_off"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ControlActBrightnessMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/brightness_auto"
+            android:textSize="@dimen/controll_act_fonsize" />
+
+        <Switch
+            android:id="@+id/ControlActBrightnessOnOffSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ControlActBrightnessText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActLightLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/light_lv"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActBrightnessLevelSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/controll_act_item_margin"
+        android:text="@string/sound"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/controll_act_title_fonsize"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controll_act_line_thickness"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActSoundOnOffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/sound_vibrate"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/ControlActSoundOnOffSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActMediaVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/media_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActMediaVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActRingVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/ring_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActRingVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActNotificationVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/notification_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActNotificationVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActCallVlumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/call_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActCallVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActAlarmVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/alarm_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActAlarmVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActSystemVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/systme_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActSystemVolumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/controll_act_item_margin"
+        android:text="@string/vibrate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/controll_act_title_fonsize"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controll_act_line_thickness"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActVibrateOnOffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/vibrate_ringer_on_off"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/ControlActVibrateRingerOnOffSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActVibrateRingerLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/vibrate_ringer_lv"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActVibrateLevelSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActVibrateNotificationOnOffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/vibrate_notification_on_off"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/ControlActVibrateNotificationOnOffSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActVibrateNotificationLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/vibrate_notification_lv"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/ControlActVibrateNotificationLevelSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/controll_act_item_margin"
+        android:text="@string/silent"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/controll_act_title_fonsize"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controll_act_line_thickness"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/controll_act_item_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ControlActSilentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/controll_act_item_margin"
+            android:text="@string/silent_mode"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/controll_act_fonsize"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/ControlActSilentSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
