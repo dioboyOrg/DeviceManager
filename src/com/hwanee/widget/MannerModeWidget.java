@@ -1,9 +1,5 @@
 package com.hwanee.widget;
 
-import com.hwanee.manager.DeviceData;
-import com.hwanee.manager.DeviceManager;
-import com.hwanee.soundmanager.R;
-
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -17,6 +13,10 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.widget.RemoteViews;
 import android.widget.Toast;
+
+import com.hwanee.devicemanager.R;
+import com.hwanee.manager.DeviceData;
+import com.hwanee.manager.DeviceManager;
 
 public class MannerModeWidget extends AppWidgetProvider {
 	public static final String ACTION_BTN = "com.hwanee.appwiget.MannerModeWidget.ACTION_BTN";

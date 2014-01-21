@@ -14,7 +14,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Switch;
 
-import com.hwanee.soundmanager.R;
+import com.hwanee.devicemanager.R;
 
 public class MainActivity extends Activity {
 
@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
 	}
 
 	private void initSeekBar() {
-//		initBrightLevelSeekBar();
+		initBrightLevelSeekBar();
 		initMediaVolumeBar();
 		initRingVolumeBar();
 		initNotificationBar();
